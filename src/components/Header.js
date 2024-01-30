@@ -8,6 +8,7 @@ import { useEffect } from "react"
 import {onAuthStateChanged } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { LOGO, PFP } from '../utils/Constants';
+import BrowseHeader from './BrowseHeader';
 
 
 
@@ -49,20 +50,16 @@ const Header = () => {
   }, [])
 
   return (
-    <div className='absolute px-8 py-4 bg-gradient-to-br from-black w-full h-full z-10 flex justify-between'>
-      <img className='h-24 px-20'
-      src= {LOGO} alt='logo'></img>
+    <>
+    {(auth.currentUser == null ) && (    
+      <div className='absolute px-8 py-4 bg-gradient-to-br from-black w-full h-full z-10 flex justify-between'>
+    <img className='h-24 px-20'
+    src= {LOGO} alt='logo'></img>
+      </div>)}
        {auth.currentUser &&
-        <div className='flex flex-col align-middle'>
-          <img className=' h-12 w-12 ml-2 flex'
-            alt='usericon'
-            src={auth.currentUser.photoURL} />
-          <button className='text-white flex' onClick={handleSignOut}>
-            (sign out)
-          </button>
-        </div>
+        <BrowseHeader/>
 }
-    </div>
+    </>
     
   )
 }
