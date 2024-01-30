@@ -91,3 +91,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 -NetflixGPT
     -Search Bar
     -Movie Suggestions
+
+    CONTINUE FROM 1:04:42

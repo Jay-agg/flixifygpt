@@ -5,8 +5,11 @@ import moviesReducer from "./moviesSlice";
 
 const appStore = configureStore(
     {
-        reducer: {userReducer},
-        movies: {moviesReducer},
+        reducer:{
+            user: userReducer,
+            movies: moviesReducer,
+
+        } 
     }
 )
 
