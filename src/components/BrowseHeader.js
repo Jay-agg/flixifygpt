@@ -8,7 +8,7 @@ import { useEffect } from "react";
 import { onAuthStateChanged } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { LOGO } from "../utils/Constants";
-import gptSearchComponent from "./GptSearchComponent";
+import GPTSearchComponent from "./GptSearchComponent";
 import { toggleGptSearchView } from "../utils/gptSlice";
 
 const BrowseHeader = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 
-const GptSearchComponent = () => {
+const GPTSearchComponent = () => {
   return <div>GPTSearchComponent</div>;
 };
 
-export default GptSearchComponent;
+export default GPTSearchComponent;
