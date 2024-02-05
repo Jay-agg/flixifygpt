@@ -88,3 +88,4 @@ Title & Description
 -NetflixGPT
 -Search Bar
 -Movie Suggestions
+-Language Translation
