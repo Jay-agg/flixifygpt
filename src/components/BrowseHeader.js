@@ -80,10 +80,10 @@ const BrowseHeader = () => {
           )}
 
           <button
-            className="bg-white rounded-2xl p-3 mx-5 hover:bg-opacity-60 ease-in-out "
+            className="bg-white rounded-lg px-3 py-1 mx-5 hover:bg-opacity-60 ease-in-out "
             onClick={handleGptSearchClick}
           >
-            GPT-Search
+            {showGptSearch ? "Home" : "GPT-Search"}
           </button>
           <img className="w-12 h-12" alt="usericon" src={user?.photoURL} />
           <button onClick={handleSignOut} className="font-bold text-white ">
