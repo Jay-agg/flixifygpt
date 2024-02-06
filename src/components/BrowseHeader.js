@@ -83,7 +83,7 @@ const BrowseHeader = () => {
             className="bg-purple-900 text-white rounded-lg px-2 md:px-3 py-1 mx-1 md:mx-5 hover:bg-opacity-60 ease-in-out "
             onClick={handleGptSearchClick}
           >
-            {showGptSearch ? "Home" : "GPT-Search"}
+            {showGptSearch ? "Home" : "AI-Search"}
           </button>
           <img
             className="hidden md:block w-12 h-12"

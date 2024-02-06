@@ -56,7 +56,7 @@ const Header = () => {
     <>
       {auth.currentUser == null && (
         <div className="absolute px-8 py-4 bg-gradient-to-br from-black w-full h-full z-10 flex justify-between">
-          <img className="h-24 mx-auto md:px-20" src={LOGO} alt="logo"></img>
+          <img className="h-24 px-auto md:px-20" src={LOGO} alt="logo"></img>
         </div>
       )}
       {auth.currentUser && <BrowseHeader />}
