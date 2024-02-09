@@ -81,7 +81,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 -Browse(After Authentication)
 -Header
 -Main Movie
-Tailer in BG
+-Tailer in BG
 Title & Description
 -Movie Suggestions
 -MovieLists \* N
