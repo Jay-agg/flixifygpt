@@ -14,6 +14,8 @@ import { BG_IMG_URL, PFP } from "../utils/Constants";
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
+  const [emailValue, setEmailValue] = useState("testingaccount01@gmail.com");
+  const [passwordValue, setPasswordValue] = useState("Testingaccount@123");
 
   const email = useRef(null);
   const password = useRef(null);
@@ -89,6 +91,15 @@ const Login = () => {
   const toggleSignInForm = () => {
     setIsSignInForm(!isSignInForm);
   };
+
+  const handleEmailChange = (event) => {
+    setEmailValue(event.target.value);
+  };
+
+  const handlePasswordChange = (event) => {
+    setPasswordValue(event.target.value);
+  };
+
   return (
     <div>
       <Header />
@@ -119,12 +130,16 @@ const Login = () => {
           type="text"
           placeholder="Email or phone number"
           className="p-4 my-2 w-full rounded-md  bg-stone-800 bg-opacity-35 border border-stone-600"
+          value={emailValue}
+          onChange={handleEmailChange}
         />
         <input
           ref={password}
           type="password"
           placeholder="Password"
           className="p-4 my-2 w-full rounded-md bg-stone-800 bg-opacity-35 border border-stone-600"
+          value={passwordValue}
+          onChange={handlePasswordChange}
         />
         <p className="text-red-500">{errorMessage}</p>
         <button
