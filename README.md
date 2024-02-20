@@ -89,3 +89,4 @@ Title & Description
 -Search Bar
 -Movie Suggestions
 -Multi Language
+-When clicked on moviecard,update url to movie/id, take id from url and give it to player on the page
