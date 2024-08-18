@@ -1,92 +1,104 @@
-# Getting Started with Create React App
+# Netflix-GPT 🎥🤖
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to **Netflix-GPT**! This project is a clone of Netflix integrated with an AI-powered movie recommendation system using Google's Gemini 1.5 Flash. The application provides personalized movie suggestions based on user preferences, making it a unique and intelligent way to discover new content.
 
-## Available Scripts
+## [Video Demo](https://www.linkedin.com/posts/jayant-aggarwal-418910248_netflixclone-ai-openai-activity-7160646786708082688-sPxI?utm_source=share&utm_medium=member_desktop)
 
-In the project directory, you can run:
+## Screenshots
 
-### `npm start`
+![Login](./public/Login.png)
+![Login](./public/Home.png)
+![Login](./public/Movie%20Suggestions.png)
+![Login](./public/GPT%20Searc.png)
+![Login](./public/GPT%20Recommendations.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **AI-Driven Recommendations**: Powered by Gemini, delivering personalized movie suggestions.
+- **User Authentication**: Seamless sign-up and login functionality using Firebase.
+- **Interactive UI**: A responsive and visually appealing interface built with ReactJS and Tailwind CSS.
+- **State Management**: Efficient and scalable state management using Redux.
+- **Real-Time Updates**: Dynamic content updates and user interactions for an immersive experience.
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **ReactJS**: For building the user interface and managing component states.
+- **Tailwind CSS**: For styling and designing a responsive UI.
+- **Redux**: For global state management across the application.
+- **Firebase**: For user authentication and real-time database management.
+- **Google's Gemini 1.5 Flash**: The core of the AI-powered recommendation system.
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Ensure you have the following installed:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Node.js](https://nodejs.org/) (v14 or later)
+- [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
+- [Git](https://git-scm.com/)
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Clone the Repository**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   git clone https://github.com/Jay-agg/flixifygpt.git
+   cd flixifygpt
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Install Dependencies**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm install
+   ```
 
-## Learn More
+   or
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   yarn install
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Set Up Environment Variables**
 
-### Code Splitting
+   Create a `.env` file in the root directory and add the necessary environment variables for Firebase and OpenAI.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```bash
+   REACT_APP_FIREBASE_API_KEY=your-firebase-api-key
+   REACT_APP_FIREBASE_AUTH_DOMAIN=your-firebase-auth-domain
+   REACT_APP_FIREBASE_PROJECT_ID=your-firebase-project-id
+   REACT_APP_GEMINI_API_KEY=your-gemini-api-key
+   ```
 
-### Analyzing the Bundle Size
+4. **Run the Application**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ```bash
+   npm start
+   ```
 
-### Making a Progressive Web App
+   or
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   ```bash
+   yarn start
+   ```
 
-### Advanced Configuration
+   The application will be available at `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Usage
 
-### Deployment
+1. **Sign Up / Log In**: Create an account or log in using Firebase authentication.
+2. **Browse Movies**: Explore a wide range of movies available on the platform.
+3. **Get AI Recommendations**: Receive personalized movie suggestions based on your viewing habits and preferences.
+4. **Enjoy Streaming**: Sit back and enjoy your AI-curated movie selections.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License
 
-### `npm run build` fails to minify
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
 
-#Netflix GPT
+For any questions or suggestions, feel free to reach out:
 
--Create React App
--Configured Tailwind CSS
-
-#Features
--Login/SignUp
--Sign In/ Sign Up Form
--Redirect to Browse Page
--Browse(After Authentication)
--Header
--Main Movie
--Tailer in BG
-Title & Description
--Movie Suggestions
--MovieLists \* N
--NetflixGPT
--Search Bar
--Movie Suggestions
--Multi Language
--When clicked on moviecard,update url to movie/id, take id from url and give it to player on the page
+- **Email**: jayantaggarwal021@gmail.com
+- **GitHub**: [Jay-agg](https://github.com/Jay-agg)
+- **LinkedIn**: [Jayant Aggarwal](https://www.linkedin.com/in/jayant-aggarwal-418910248/)
